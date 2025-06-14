@@ -220,6 +220,7 @@
     background-color: white;
     right: 0;
     top: 100%;
+    z-index: 999;
 }
 
 .sub-menu-product-container{
@@ -276,9 +277,6 @@
     cursor: pointer;
     transition: all 0.3s;
 }
-.product-card:hover p{
-    margin-bottom: 50px;
-}
 
 
 /* =========Slider========= */
@@ -305,20 +303,6 @@
 }
 .slide-detail p{
     color: rgb(171, 161, 161);
-}
-.slide-detail button{
-    border: none;
-    background-color: #1f39de;
-    color: white;
-    margin-top: 15px;
-    font-size: 15px;
-    padding: 8px 15px;
-    border-radius: 7px;
-    display: flex;
-    align-items: center;
-}
-.slide-detail button i{
-    font-size: 24px;
 }
 
 .slide-image{
@@ -366,4 +350,71 @@
 }
 .promotion-container .promotion-card:last-child{
     background-image: url(images/promotion-3.png);
+}
+
+/* =======Featured Product========== */
+.featured-product{
+    margin-top: 25px;
+}
+.featured-product h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.featured-product-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.featured-product-card{
+    border: 1px solid #ece2e2;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.featured-product-card .head-card{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 14px;
+    color: rgb(155, 147, 147);
+}
+.featured-product-card .head-card span{
+    font-size: 11px;
+}
+
+.featured-product-card img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+.featured-product-card h4{
+    width: 70%;
+    color: rgb(70, 65, 65);
+    text-align: left;
+    padding: 0px 10px;
+    font-weight: 500;
+    font-size: 13px;
+}
+.featured-product-card p{
+    color: black;
+    padding: 10px 10px;
+    text-align: left;
+    font-size: 18px;
+}
+.add-to-cart-btn{
+    position: absolute;
+    width: 100%;
+    border: none;
+    background-color: #2553d5;
+    color: white;
+    padding: 10px 0px;
+    bottom: -40px;
+    transition: all 0.3s; 
+}
+.featured-product-card:hover .add-to-cart-btn{
+    bottom: 0;
 }
