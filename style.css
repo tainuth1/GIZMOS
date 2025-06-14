@@ -392,7 +392,6 @@
     object-fit: cover;
 }
 .featured-product-card h4{
-    width: 70%;
     color: rgb(70, 65, 65);
     text-align: left;
     padding: 0px 10px;
@@ -417,4 +416,107 @@
 }
 .featured-product-card:hover .add-to-cart-btn{
     bottom: 0;
+}
+
+
+/* ======All Product====== */
+.product-list h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+.product-list-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.product-list-container .featured-product-card:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.product-list-container .featured-product-card:nth-child(3) img{
+    height: 100%;
+}
+
+
+
+/* ======Footer=========== */
+.footer-background{
+    background-color: #1a1a1a;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact h4{
+    font-size: 25px;
+    color: white;
+}
+.contact form{
+    width: 500px;
+    position: relative;
+}
+.contact form input{
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid rgb(150, 130, 130);
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+}
+.contact form i{
+    color: rgb(223, 206, 206);
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+.social h5{
+    font-size: 18px;
+    color: white;
+}
+.social .icons-cotnainer{
+    color: white;
+}
+
+hr{
+    margin: 45px 0;
+}
+.footer-menu{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer-menu ul{
+    list-style: none;
+}
+.footer-menu ul li:first-child{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+.footer-menu ul li{
+    color: gray;
+    margin-top: 5px;
+}
+.copy-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copy-right p{
+    color: rgb(204, 200, 200);
+}
+.copy-right img{
+    width: 200px;
 }
